@@ -1,0 +1,1517 @@
+[gd_scene format=3 uid="uid://vcedt776v1wi"]
+
+[ext_resource type="Texture2D" uid="uid://digse55dj4o6h" path="res://textures/2dsprites/gridtile.png" id="1_ls6he"]
+[ext_resource type="PackedScene" uid="uid://ccprdr7oeai8k" path="res://scenes/player scene/player.tscn" id="2_21dlp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_acyu7"]
+size = Vector3(1.5995617, 1.5949745, 0.001)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ls6he"]
+size = Vector3(3, 1, 3)
+
+[node name="first map" type="Node3D" unique_id=294608344]
+
+[node name="ground" type="StaticBody3D" parent="." unique_id=1705957617]
+collision_layer = 2
+collision_mask = 2
+
+[node name="gridtile sprits" type="Node" parent="ground" unique_id=440355063]
+
+[node name="gridtile5" type="Sprite3D" parent="ground/gridtile sprits" unique_id=2017117061]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4.5019016, 0, -3.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile6" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1465848726]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4.5019016, 0, -2.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile7" type="Sprite3D" parent="ground/gridtile sprits" unique_id=2055807763]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4.5019016, 0, -4.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile9" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1523538333]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -2.5019016, 0, -4.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile8" type="Sprite3D" parent="ground/gridtile sprits" unique_id=414516261]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -3.5049014, 0, -4.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile" type="Sprite3D" parent="ground/gridtile sprits" unique_id=14452610]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -2.5019016, 0, -2.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile2" type="Sprite3D" parent="ground/gridtile sprits" unique_id=848151427]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -3.5019016, 0, -2.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile3" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1825975682]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -2.5019016, 0, -3.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile4" type="Sprite3D" parent="ground/gridtile sprits" unique_id=2112729971]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -3.5019016, 0, -3.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile10" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1397110396]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -7.503466, 0, -3.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile11" type="Sprite3D" parent="ground/gridtile sprits" unique_id=344376480]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -7.503466, 0, -2.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile12" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1551579526]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -7.503466, 0, -4.507708)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile13" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1811116745]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5.503466, 0, -4.507708)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile14" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1315261243]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.506466, 0, -4.507708)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile15" type="Sprite3D" parent="ground/gridtile sprits" unique_id=765213029]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5.503466, 0, -2.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile16" type="Sprite3D" parent="ground/gridtile sprits" unique_id=469349943]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.503466, 0, -2.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile17" type="Sprite3D" parent="ground/gridtile sprits" unique_id=351822850]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5.503466, 0, -3.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile18" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1245602586]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.503466, 0, -3.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile19" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1106340865]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4.5019016, 0, -6.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile20" type="Sprite3D" parent="ground/gridtile sprits" unique_id=628236542]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4.5019016, 0, -5.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile21" type="Sprite3D" parent="ground/gridtile sprits" unique_id=838993362]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4.5019016, 0, -7.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile22" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1335537870]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -2.5019016, 0, -7.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile23" type="Sprite3D" parent="ground/gridtile sprits" unique_id=685237447]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -3.5049014, 0, -7.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile24" type="Sprite3D" parent="ground/gridtile sprits" unique_id=308477910]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -2.5019016, 0, -5.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile25" type="Sprite3D" parent="ground/gridtile sprits" unique_id=184984415]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -3.5019016, 0, -5.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile26" type="Sprite3D" parent="ground/gridtile sprits" unique_id=867786858]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -2.5019016, 0, -6.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile27" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1812964971]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -3.5019016, 0, -6.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile28" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1310457724]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -7.503466, 0, -6.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile29" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1725816829]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -7.503466, 0, -5.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile30" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1805175204]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -7.503466, 0, -7.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile31" type="Sprite3D" parent="ground/gridtile sprits" unique_id=930225904]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5.503466, 0, -7.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile32" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1470668167]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.506466, 0, -7.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile33" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1073699570]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5.503466, 0, -5.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile34" type="Sprite3D" parent="ground/gridtile sprits" unique_id=288324283]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.503466, 0, -5.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile35" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1070053353]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5.503466, 0, -6.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile36" type="Sprite3D" parent="ground/gridtile sprits" unique_id=600648317]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.503466, 0, -6.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile37" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1539303490]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4.5019016, 0, 2.5027704)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile38" type="Sprite3D" parent="ground/gridtile sprits" unique_id=835469366]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4.5019016, 0, 3.50277)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile39" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1964931965]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4.5019016, 0, 1.5027709)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile40" type="Sprite3D" parent="ground/gridtile sprits" unique_id=2111240044]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -2.5019016, 0, 1.5027709)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile41" type="Sprite3D" parent="ground/gridtile sprits" unique_id=87530959]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -3.5049014, 0, 1.5027709)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile42" type="Sprite3D" parent="ground/gridtile sprits" unique_id=2064043081]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -2.5019016, 0, 3.50277)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile43" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1263867871]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -3.5019016, 0, 3.50277)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile44" type="Sprite3D" parent="ground/gridtile sprits" unique_id=880855143]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -2.5019016, 0, 2.5027704)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile45" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1063397073]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -3.5019016, 0, 2.5027704)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile46" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1150987058]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -7.503466, 0, 2.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile47" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1285907420]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -7.503466, 0, 3.499938)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile48" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1569537839]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -7.503466, 0, 1.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile49" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1445443109]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5.503466, 0, 1.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile50" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1185567185]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.506466, 0, 1.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile51" type="Sprite3D" parent="ground/gridtile sprits" unique_id=357823266]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5.503466, 0, 3.499938)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile52" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1907791159]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.503466, 0, 3.499938)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile73" type="Sprite3D" parent="ground/gridtile sprits" unique_id=873087137]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4.5019016, 0, 4.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile74" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1190728417]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -2.5019016, 0, 4.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile75" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1795658327]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -3.5019016, 0, 4.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile76" type="Sprite3D" parent="ground/gridtile sprits" unique_id=885183716]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -7.503466, 0, 4.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile77" type="Sprite3D" parent="ground/gridtile sprits" unique_id=838158988]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5.503466, 0, 4.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile78" type="Sprite3D" parent="ground/gridtile sprits" unique_id=569837472]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.503466, 0, 4.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile79" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1927987063]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4.5019016, 0, 5.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile80" type="Sprite3D" parent="ground/gridtile sprits" unique_id=855825625]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -2.5019016, 0, 5.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile81" type="Sprite3D" parent="ground/gridtile sprits" unique_id=2019238301]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -3.5019016, 0, 5.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile82" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1337936205]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -7.503466, 0, 5.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile83" type="Sprite3D" parent="ground/gridtile sprits" unique_id=706045645]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5.503466, 0, 5.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile84" type="Sprite3D" parent="ground/gridtile sprits" unique_id=768576644]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.503466, 0, 5.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile85" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1026137872]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4.5019016, 0, 6.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile86" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1145575161]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -2.5019016, 0, 6.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile87" type="Sprite3D" parent="ground/gridtile sprits" unique_id=309708961]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -3.5019016, 0, 6.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile88" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1026871364]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -7.503466, 0, 6.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile89" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1442877454]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5.503466, 0, 6.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile90" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1196241848]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.503466, 0, 6.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile91" type="Sprite3D" parent="ground/gridtile sprits" unique_id=601202410]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4.5019016, 0, 7.502639)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile92" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1886072120]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -2.5019016, 0, 7.502639)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile93" type="Sprite3D" parent="ground/gridtile sprits" unique_id=983534953]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -3.5019016, 0, 7.502639)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile94" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1246523290]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -7.503466, 0, 7.502639)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile95" type="Sprite3D" parent="ground/gridtile sprits" unique_id=215715649]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5.503466, 0, 7.502639)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile96" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1014504942]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.503466, 0, 7.502639)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile53" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1773722397]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5.503466, 0, 2.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile54" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1232982577]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.503466, 0, 2.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile55" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1933032967]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4.5019016, 0, -0.49757063)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile56" type="Sprite3D" parent="ground/gridtile sprits" unique_id=599493510]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4.5019016, 0, 0.50242925)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile57" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1409192325]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4.5019016, 0, -1.4975706)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile58" type="Sprite3D" parent="ground/gridtile sprits" unique_id=554502669]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -2.5019016, 0, -1.4975706)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile59" type="Sprite3D" parent="ground/gridtile sprits" unique_id=481261265]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -3.5049014, 0, -1.4975706)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile60" type="Sprite3D" parent="ground/gridtile sprits" unique_id=421773660]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -2.5019016, 0, 0.50242925)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile61" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1964977679]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -3.5019016, 0, 0.50242925)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile62" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1988333338]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -2.5019016, 0, -0.49757063)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile63" type="Sprite3D" parent="ground/gridtile sprits" unique_id=202858135]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -3.5019016, 0, -0.49757063)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile64" type="Sprite3D" parent="ground/gridtile sprits" unique_id=545317182]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -7.503466, 0, -0.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile65" type="Sprite3D" parent="ground/gridtile sprits" unique_id=839199358]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -7.503466, 0, 0.4995978)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile66" type="Sprite3D" parent="ground/gridtile sprits" unique_id=74815457]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -7.503466, 0, -1.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile97" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1311504455]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5, 0, -3.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile98" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1505523217]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5, 0, -2.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile99" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1558501419]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5, 0, -4.507708)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile100" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1674431471]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5, 0, -6.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile101" type="Sprite3D" parent="ground/gridtile sprits" unique_id=334160752]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5, 0, -5.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile102" type="Sprite3D" parent="ground/gridtile sprits" unique_id=917089238]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5, 0, -7.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile103" type="Sprite3D" parent="ground/gridtile sprits" unique_id=992343431]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5, 0, 2.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile104" type="Sprite3D" parent="ground/gridtile sprits" unique_id=972563182]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5, 0, 3.499938)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile105" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1718894162]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5, 0, 1.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile106" type="Sprite3D" parent="ground/gridtile sprits" unique_id=267029932]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5, 0, 4.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile107" type="Sprite3D" parent="ground/gridtile sprits" unique_id=486182064]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5, 0, 5.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile108" type="Sprite3D" parent="ground/gridtile sprits" unique_id=153291270]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5, 0, 6.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile109" type="Sprite3D" parent="ground/gridtile sprits" unique_id=467199063]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5, 0, 7.502639)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile110" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1765640232]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5, 0, -0.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile111" type="Sprite3D" parent="ground/gridtile sprits" unique_id=2011055401]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5, 0, 0.4995978)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile112" type="Sprite3D" parent="ground/gridtile sprits" unique_id=5104865]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1.5, 0, -1.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile67" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1263130829]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5.503466, 0, -1.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile68" type="Sprite3D" parent="ground/gridtile sprits" unique_id=761113017]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.506466, 0, -1.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile69" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1341940247]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5.503466, 0, 0.4995978)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile70" type="Sprite3D" parent="ground/gridtile sprits" unique_id=623407091]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.503466, 0, 0.4995978)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile71" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1545044854]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5.503466, 0, -0.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile72" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1126231958]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.503466, 0, -0.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile113" type="Sprite3D" parent="ground/gridtile sprits" unique_id=648376570]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.4980984, 0, -3.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile114" type="Sprite3D" parent="ground/gridtile sprits" unique_id=39914043]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.4980984, 0, -2.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile115" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1527694327]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.4980984, 0, -4.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile116" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1942909034]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.4980984, 0, -4.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile117" type="Sprite3D" parent="ground/gridtile sprits" unique_id=913048887]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.4950986, 0, -4.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile118" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1923420266]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.4980984, 0, -2.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile119" type="Sprite3D" parent="ground/gridtile sprits" unique_id=279848477]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.4980984, 0, -2.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile120" type="Sprite3D" parent="ground/gridtile sprits" unique_id=429031341]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.4980984, 0, -3.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile121" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1464633823]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.4980984, 0, -3.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile122" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1549759016]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.5034661, 0, -3.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile123" type="Sprite3D" parent="ground/gridtile sprits" unique_id=8353500]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.5034661, 0, -2.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile124" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1213386998]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.5034661, 0, -4.507708)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile125" type="Sprite3D" parent="ground/gridtile sprits" unique_id=974161581]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.4965339, 0, -4.507708)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile126" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1982473839]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.4935341, 0, -4.507708)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile127" type="Sprite3D" parent="ground/gridtile sprits" unique_id=428394747]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.4965339, 0, -2.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile128" type="Sprite3D" parent="ground/gridtile sprits" unique_id=2125006574]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.49653387, 0, -2.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile129" type="Sprite3D" parent="ground/gridtile sprits" unique_id=16215355]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.4965339, 0, -3.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile130" type="Sprite3D" parent="ground/gridtile sprits" unique_id=2075970287]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.49653387, 0, -3.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile131" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1542254711]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.4980984, 0, -6.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile132" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1782122608]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.4980984, 0, -5.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile133" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1044396484]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.4980984, 0, -7.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile134" type="Sprite3D" parent="ground/gridtile sprits" unique_id=359628699]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.4980984, 0, -7.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile135" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1615668821]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.4950986, 0, -7.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile136" type="Sprite3D" parent="ground/gridtile sprits" unique_id=603872535]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.4980984, 0, -5.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile137" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1371445541]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.4980984, 0, -5.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile138" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1002021538]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.4980984, 0, -6.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile139" type="Sprite3D" parent="ground/gridtile sprits" unique_id=716788250]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.4980984, 0, -6.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile140" type="Sprite3D" parent="ground/gridtile sprits" unique_id=2084623536]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.5034661, 0, -6.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile141" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1140185543]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.5034661, 0, -5.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile142" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1877838044]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.5034661, 0, -7.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile143" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1033790659]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.4965339, 0, -7.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile144" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1558415317]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.4935341, 0, -7.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile145" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1187392114]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.4965339, 0, -5.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile146" type="Sprite3D" parent="ground/gridtile sprits" unique_id=761211251]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.49653387, 0, -5.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile147" type="Sprite3D" parent="ground/gridtile sprits" unique_id=992364098]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.4965339, 0, -6.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile148" type="Sprite3D" parent="ground/gridtile sprits" unique_id=173378364]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.49653387, 0, -6.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile149" type="Sprite3D" parent="ground/gridtile sprits" unique_id=52435348]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.4980984, 0, 2.5027704)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile150" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1175036512]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.4980984, 0, 3.50277)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile151" type="Sprite3D" parent="ground/gridtile sprits" unique_id=266781502]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.4980984, 0, 1.5027709)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile152" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1618383168]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.4980984, 0, 1.5027709)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile153" type="Sprite3D" parent="ground/gridtile sprits" unique_id=875336472]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.4950986, 0, 1.5027709)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile154" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1635531120]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.4980984, 0, 3.50277)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile155" type="Sprite3D" parent="ground/gridtile sprits" unique_id=2013261775]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.4980984, 0, 3.50277)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile156" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1593942541]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.4980984, 0, 2.5027704)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile157" type="Sprite3D" parent="ground/gridtile sprits" unique_id=2042823236]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.4980984, 0, 2.5027704)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile158" type="Sprite3D" parent="ground/gridtile sprits" unique_id=762531624]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.5034661, 0, 2.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile159" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1537566760]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.5034661, 0, 3.499938)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile160" type="Sprite3D" parent="ground/gridtile sprits" unique_id=940229748]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.5034661, 0, 1.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile161" type="Sprite3D" parent="ground/gridtile sprits" unique_id=177054405]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.4965339, 0, 1.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile162" type="Sprite3D" parent="ground/gridtile sprits" unique_id=22776172]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.4935341, 0, 1.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile163" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1585583969]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.4965339, 0, 3.499938)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile164" type="Sprite3D" parent="ground/gridtile sprits" unique_id=290436266]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.49653387, 0, 3.499938)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile165" type="Sprite3D" parent="ground/gridtile sprits" unique_id=352030622]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.4980984, 0, 4.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile166" type="Sprite3D" parent="ground/gridtile sprits" unique_id=2095492020]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.4980984, 0, 4.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile167" type="Sprite3D" parent="ground/gridtile sprits" unique_id=543510024]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.4980984, 0, 4.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile168" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1946339746]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.5034661, 0, 4.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile169" type="Sprite3D" parent="ground/gridtile sprits" unique_id=497654467]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.4965339, 0, 4.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile170" type="Sprite3D" parent="ground/gridtile sprits" unique_id=581468666]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.49653387, 0, 4.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile171" type="Sprite3D" parent="ground/gridtile sprits" unique_id=671870035]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.4980984, 0, 5.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile172" type="Sprite3D" parent="ground/gridtile sprits" unique_id=83874339]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.4980984, 0, 5.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile173" type="Sprite3D" parent="ground/gridtile sprits" unique_id=470445636]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.4980984, 0, 5.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile174" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1234447104]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.5034661, 0, 5.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile175" type="Sprite3D" parent="ground/gridtile sprits" unique_id=827070225]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.4965339, 0, 5.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile176" type="Sprite3D" parent="ground/gridtile sprits" unique_id=628170404]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.49653387, 0, 5.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile177" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1031788333]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.4980984, 0, 6.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile178" type="Sprite3D" parent="ground/gridtile sprits" unique_id=725807550]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.4980984, 0, 6.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile179" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1555592471]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.4980984, 0, 6.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile180" type="Sprite3D" parent="ground/gridtile sprits" unique_id=661862528]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.5034661, 0, 6.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile181" type="Sprite3D" parent="ground/gridtile sprits" unique_id=29401558]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.4965339, 0, 6.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile182" type="Sprite3D" parent="ground/gridtile sprits" unique_id=2040668387]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.49653387, 0, 6.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile183" type="Sprite3D" parent="ground/gridtile sprits" unique_id=74877524]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.4980984, 0, 7.502639)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile184" type="Sprite3D" parent="ground/gridtile sprits" unique_id=66917389]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.4980984, 0, 7.502639)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile185" type="Sprite3D" parent="ground/gridtile sprits" unique_id=823616494]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.4980984, 0, 7.502639)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile186" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1849083708]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.5034661, 0, 7.502639)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile187" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1483927838]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.4965339, 0, 7.502639)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile188" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1935581130]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.49653387, 0, 7.502639)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile189" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1321357538]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.4965339, 0, 2.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile190" type="Sprite3D" parent="ground/gridtile sprits" unique_id=445033110]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.49653387, 0, 2.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile191" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1680916121]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.4980984, 0, -0.49757063)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile192" type="Sprite3D" parent="ground/gridtile sprits" unique_id=708516875]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.4980984, 0, 0.50242925)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile193" type="Sprite3D" parent="ground/gridtile sprits" unique_id=514619701]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.4980984, 0, -1.4975706)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile194" type="Sprite3D" parent="ground/gridtile sprits" unique_id=191136591]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.4980984, 0, -1.4975706)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile195" type="Sprite3D" parent="ground/gridtile sprits" unique_id=703176947]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.4950986, 0, -1.4975706)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile196" type="Sprite3D" parent="ground/gridtile sprits" unique_id=171770054]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.4980984, 0, 0.50242925)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile197" type="Sprite3D" parent="ground/gridtile sprits" unique_id=404857509]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.4980984, 0, 0.50242925)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile198" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1990872870]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.4980984, 0, -0.49757063)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile199" type="Sprite3D" parent="ground/gridtile sprits" unique_id=174165431]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.4980984, 0, -0.49757063)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile200" type="Sprite3D" parent="ground/gridtile sprits" unique_id=983483050]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.5034661, 0, -0.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile201" type="Sprite3D" parent="ground/gridtile sprits" unique_id=575648102]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.5034661, 0, 0.4995978)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile202" type="Sprite3D" parent="ground/gridtile sprits" unique_id=124398447]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.5034661, 0, -1.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile203" type="Sprite3D" parent="ground/gridtile sprits" unique_id=278545098]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.5, 0, -3.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile204" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1153341520]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.5, 0, -2.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile205" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1175008011]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.5, 0, -4.507708)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile206" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1193393070]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.5, 0, -6.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile207" type="Sprite3D" parent="ground/gridtile sprits" unique_id=316540498]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.5, 0, -5.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile208" type="Sprite3D" parent="ground/gridtile sprits" unique_id=45736346]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.5, 0, -7.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile209" type="Sprite3D" parent="ground/gridtile sprits" unique_id=374647634]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.5, 0, 2.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile210" type="Sprite3D" parent="ground/gridtile sprits" unique_id=78383939]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.5, 0, 3.499938)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile211" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1326540172]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.5, 0, 1.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile212" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1904992306]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.5, 0, 4.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile213" type="Sprite3D" parent="ground/gridtile sprits" unique_id=42017465]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.5, 0, 5.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile214" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1142466251]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.5, 0, 6.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile215" type="Sprite3D" parent="ground/gridtile sprits" unique_id=2052025830]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.5, 0, 7.502639)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile216" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1874388227]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.5, 0, -0.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile217" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1069109115]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.5, 0, 0.4995978)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile218" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1739536245]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.5, 0, -1.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile225" type="Sprite3D" parent="ground/gridtile sprits" unique_id=842878250]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.4980984, 0, -4.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile226" type="Sprite3D" parent="ground/gridtile sprits" unique_id=202421577]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.4980984, 0, -2.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile227" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1426461343]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.4980984, 0, -3.5048757)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile228" type="Sprite3D" parent="ground/gridtile sprits" unique_id=59604990]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.4980984, 0, -7.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile229" type="Sprite3D" parent="ground/gridtile sprits" unique_id=86165101]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.4980984, 0, -5.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile230" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1286154656]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.4980984, 0, -6.5052176)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile231" type="Sprite3D" parent="ground/gridtile sprits" unique_id=2092275061]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.4980984, 0, 1.5027709)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile232" type="Sprite3D" parent="ground/gridtile sprits" unique_id=373459787]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.4980984, 0, 3.50277)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile233" type="Sprite3D" parent="ground/gridtile sprits" unique_id=498456148]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.4980984, 0, 2.5027704)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile234" type="Sprite3D" parent="ground/gridtile sprits" unique_id=115234587]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.4980984, 0, 4.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile235" type="Sprite3D" parent="ground/gridtile sprits" unique_id=54646240]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.4980984, 0, 5.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile236" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1465397101]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.4980984, 0, 6.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile237" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1677141333]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.4980984, 0, 7.502639)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile238" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1771251489]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.4980984, 0, -1.4975706)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile239" type="Sprite3D" parent="ground/gridtile sprits" unique_id=724255572]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.4980984, 0, 0.50242925)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile240" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1585303329]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.4980984, 0, -0.49757063)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile241" type="Sprite3D" parent="ground/gridtile sprits" unique_id=256651574]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.5, 0, -3.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile242" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1404812327]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.5, 0, -2.5077076)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile243" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1217104862]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.5, 0, -4.507708)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile244" type="Sprite3D" parent="ground/gridtile sprits" unique_id=431744793]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.5, 0, -6.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile245" type="Sprite3D" parent="ground/gridtile sprits" unique_id=466148485]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.5, 0, -5.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile246" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1373371582]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.5, 0, -7.508049)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile247" type="Sprite3D" parent="ground/gridtile sprits" unique_id=18010356]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.5, 0, 2.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile248" type="Sprite3D" parent="ground/gridtile sprits" unique_id=2142722387]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.5, 0, 3.499938)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile249" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1642796366]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.5, 0, 1.4999385)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile250" type="Sprite3D" parent="ground/gridtile sprits" unique_id=491712101]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.5, 0, 4.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile251" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1083493615]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.5, 0, 5.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile252" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1836348627]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.5, 0, 6.502638)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile253" type="Sprite3D" parent="ground/gridtile sprits" unique_id=672692147]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.5, 0, 7.502639)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile254" type="Sprite3D" parent="ground/gridtile sprits" unique_id=740426524]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.5, 0, -0.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile255" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1882877303]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.5, 0, 0.4995978)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile256" type="Sprite3D" parent="ground/gridtile sprits" unique_id=413923293]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.5, 0, -1.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile219" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1309852347]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.4965339, 0, -1.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile220" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1700660436]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.4935341, 0, -1.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile221" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1578181907]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.4965339, 0, 0.4995978)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile222" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1006363061]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.49653387, 0, 0.4995978)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile223" type="Sprite3D" parent="ground/gridtile sprits" unique_id=520970165]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.4965339, 0, -0.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="gridtile224" type="Sprite3D" parent="ground/gridtile sprits" unique_id=1469017494]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.49653387, 0, -0.5004021)
+rotation_order = 0
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ground" unique_id=262029]
+transform = Transform3D(10, 0, 0, 0, -4.371139e-07, -10, 0, 10, -4.371139e-07, -0.0029468536, 1.5090394e-10, -0.003452301)
+shape = SubResource("BoxShape3D_acyu7")
+
+[node name="player" parent="." unique_id=187373932 instance=ExtResource("2_21dlp")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1408857316]
+transform = Transform3D(0.70710677, 0.3747095, -0.5996606, 0, 0.8480481, 0.52991927, 0.70710677, -0.3747095, 0.5996606, 0, 2, 0)
+
+[node name="cube1" type="StaticBody3D" parent="." unique_id=1147355187]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0, 2.5)
+
+[node name="gridtiles" type="Node" parent="cube1" unique_id=1611273212]
+
+[node name="sprite3D" type="Sprite3D" parent="cube1/gridtiles" unique_id=263225407]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0.5, 1)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="sprite3D2" type="Sprite3D" parent="cube1/gridtiles" unique_id=1497432137]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.5, 1, 1.5)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="sprite3D3" type="Sprite3D" parent="cube1/gridtiles" unique_id=282040593]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.5, 1, 1.5)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="sprite3D4" type="Sprite3D" parent="cube1/gridtiles" unique_id=570416150]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.5, 1, 2.5)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="sprite3D5" type="Sprite3D" parent="cube1/gridtiles" unique_id=1314934939]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.5, 1, 2.5)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="sprite3D6" type="Sprite3D" parent="cube1/gridtiles" unique_id=1369116028]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.5, 1, 2.5)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="sprite3D7" type="Sprite3D" parent="cube1/gridtiles" unique_id=969963055]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.5, 1, 1.5)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="sprite3D8" type="Sprite3D" parent="cube1/gridtiles" unique_id=1273536852]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.5, 1, 3.5)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="sprite3D9" type="Sprite3D" parent="cube1/gridtiles" unique_id=849960443]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.5, 1, 3.5)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="sprite3D10" type="Sprite3D" parent="cube1/gridtiles" unique_id=1976611027]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.5, 1, 3.5)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="Sprite3D10" type="Sprite3D" parent="cube1/gridtiles" unique_id=1701276047]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0.5, 4)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="Sprite3D11" type="Sprite3D" parent="cube1/gridtiles" unique_id=1618903119]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0.5, 4)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="Sprite3D12" type="Sprite3D" parent="cube1/gridtiles" unique_id=2106950183]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.5, 4)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="Sprite3D2" type="Sprite3D" parent="cube1/gridtiles" unique_id=529629612]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0.5, 1)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="Sprite3D3" type="Sprite3D" parent="cube1/gridtiles" unique_id=689509859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.5, 1)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="Sprite3D4" type="Sprite3D" parent="cube1/gridtiles" unique_id=999081381]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2, 0.5, 1.5)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="Sprite3D5" type="Sprite3D" parent="cube1/gridtiles" unique_id=1886140285]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2, 0.5, 2.5)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="Sprite3D6" type="Sprite3D" parent="cube1/gridtiles" unique_id=1448130524]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2, 0.5, 3.5)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="Sprite3D7" type="Sprite3D" parent="cube1/gridtiles" unique_id=591017996]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5, 0.5, 3.5)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="Sprite3D8" type="Sprite3D" parent="cube1/gridtiles" unique_id=30796892]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5, 0.5, 2.5)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="Sprite3D9" type="Sprite3D" parent="cube1/gridtiles" unique_id=1903036672]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5, 0.5, 1.5)
+pixel_size = 0.015625
+texture = ExtResource("1_ls6he")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cube1" unique_id=207871772]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_ls6he")

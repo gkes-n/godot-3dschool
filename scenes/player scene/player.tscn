@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://ccprdr7oeai8k"]
+
+[ext_resource type="Texture2D" uid="uid://dkwpgeqtcnul3" path="res://textures/2dsprites/pagerobot.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://cyek1lnhwrsvi" path="res://scenes/player scene/character_body_3d.gd" id="1_4ojry"]
+[ext_resource type="Texture2D" uid="uid://drsvepctkolv7" path="res://textures/2dsprites/pagerobot front.png" id="2_tw1hs"]
+
+[sub_resource type="GDScript" id="GDScript_tw1hs"]
+script/source = "extends Node3D
+"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tw1hs"]
+margin = 0.4
+size = Vector3(0.4, 0.7, 0.4)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_c06da"]
+radius = 0.22509766
+height = 0.9992676
+
+[node name="player" type="Node3D" unique_id=187373932]
+script = SubResource("GDScript_tw1hs")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=81735177]
+collision_mask = 15
+script = ExtResource("1_4ojry")
+
+[node name="Sprite3D" type="Sprite3D" parent="CharacterBody3D" unique_id=1760925995]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.01)
+pixel_size = 0.015625
+texture = ExtResource("2_tw1hs")
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=518960766]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.85, 0.01)
+
+[node name="Sprite3D2" type="Sprite3D" parent="CharacterBody3D" unique_id=2110404578]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.01)
+pixel_size = 0.015625
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=638848754]
+transform = Transform3D(0.7071067, 0, 0.7071067, 0, 1, 0, -0.7071067, 0, 0.7071067, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_tw1hs")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1078255555]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5003662, 0)
+shape = SubResource("CapsuleShape3D_c06da")
