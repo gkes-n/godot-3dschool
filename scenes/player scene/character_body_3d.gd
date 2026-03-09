@@ -1,28 +1,64 @@
 extends CharacterBody3D
 
+# @export variables are available in Inspector.
+@export var speed: float = 1
+@export var jump_velocity: float = 4.5
+@export var mouse_sensitivity: float = 0.002
+@export var accel: float = 0.024  
 
-const SPEED = 6.2
-const JUMP_VELOCITY = 5
+# Godot's global project settings; RigidBody3D nodes use the same value automatically
+var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
 
+# onready delays loading until $Camera3D is initialized
+# $Camera3D is shorthand for $  =  get_node("Camera3D")
+@onready var camera: Camera3D = $Camera3D
 
-func _physics_process(delta: float) -> void:
-	# Add the gravity.
+func _ready():
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
+func _input(event) -> void:
+	if event is InputEventMouseMotion:
+		rotate_y(-event.relative.x * mouse_sensitivity)
+		camera.rotate_x(-event.relative.y * mouse_sensitivity)
+		camera.rotation.x = clamp(camera.rotation.x, -PI/2, PI/2)
+	
+	if Input.is_action_just_pressed("ui_cancel"):
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED else Input.MOUSE_MODE_CAPTURED
+
+func _physics_process(delta):
+	# Gravity
 	if not is_on_floor():
-		velocity += get_gravity() * delta
+		velocity.y -= gravity * delta
 
-	# Handle jump.
+	# Jump
 	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+		velocity.y = jump_velocity
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
+	# Acceleration
+	"""
+	When a wasd key is pressed, make speed bigger; when no key is pressed, make it 
+	smaller.
+	"""
+	var is_moving = Input.is_action_pressed("forwards") or \
+					Input.is_action_pressed("backwards") or \
+					Input.is_action_pressed("left") or \
+					Input.is_action_pressed("right")
+	if is_moving:
+		speed = speed + accel
+	else: # deceleration
+		if speed > 1:
+			speed = speed - 2 * accel
+	print("speed: " + str(speed))
+	# Movement
 	var input_dir := Input.get_vector("left", "right", "forwards", "backwards")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
+		velocity.x = direction.x * speed
+		velocity.z = direction.z * speed
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.z = move_toward(velocity.z, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, speed)
+		velocity.z = move_toward(velocity.z, 0, speed)
+
+
 
 	move_and_slide()
