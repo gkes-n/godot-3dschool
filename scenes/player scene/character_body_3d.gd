@@ -1,10 +1,9 @@
 extends CharacterBody3D
 
 # @export variables are available in Inspector.
-@export var speed: float = 1
+@export var speed: float = 6
 @export var jump_velocity: float = 4.5
-@export var mouse_sensitivity: float = 0.002
-@export var accel: float = 0.024  
+@export var mouse_sensitivity: float = 0.002  
 
 # Godot's global project settings; RigidBody3D nodes use the same value automatically
 var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -16,7 +15,7 @@ var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
-func _input(event) -> void:
+func _input(event):
 	if event is InputEventMouseMotion:
 		rotate_y(-event.relative.x * mouse_sensitivity)
 		camera.rotate_x(-event.relative.y * mouse_sensitivity)
@@ -34,21 +33,6 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jump_velocity
 
-	# Acceleration
-	"""
-	When a wasd key is pressed, make speed bigger; when no key is pressed, make it 
-	smaller.
-	"""
-	var is_moving = Input.is_action_pressed("forwards") or \
-					Input.is_action_pressed("backwards") or \
-					Input.is_action_pressed("left") or \
-					Input.is_action_pressed("right")
-	if is_moving:
-		speed = speed + accel
-	else: # deceleration
-		if speed > 1:
-			speed = speed - 2 * accel
-	print("speed: " + str(speed))
 	# Movement
 	var input_dir := Input.get_vector("left", "right", "forwards", "backwards")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
@@ -58,7 +42,6 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 		velocity.z = move_toward(velocity.z, 0, speed)
-
 
 
 	move_and_slide()
