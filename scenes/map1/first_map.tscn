@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://vcedt776v1wi"]
 
 [ext_resource type="Texture2D" uid="uid://digse55dj4o6h" path="res://textures/2dsprites/gridtile.png" id="1_ls6he"]
-[ext_resource type="PackedScene" uid="uid://ccprdr7oeai8k" path="res://scenes/player scene/player.tscn" id="2_21dlp"]
+[ext_resource type="PackedScene" uid="uid://ccprdr7oeai8k" path="res://scenes/player/player.tscn" id="2_21dlp"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_acyu7"]
 size = Vector3(1.5995617, 1.5949745, 0.001)
