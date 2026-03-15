@@ -6,6 +6,10 @@ extends CharacterBody3D
 @export var mouse_sensitivity: float = 0.002
 @export var accel: float = 0.024  
 
+@export var bob_frequency: float = 3.0
+@export var bob_amplitude: float = 0.1
+@export var head_bob_time: float = 0.0
+
 # Godot's global project settings; RigidBody3D nodes use the same value automatically
 var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
 
@@ -15,6 +19,16 @@ var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
+func _head_bob(time: float) -> Vector3:
+	"""
+	returns a 3 dim vector that determines how far the camera moves up or down
+	"""
+	var pos = Vector3.ZERO
+	pos.y = 0.85 + sin(time) * bob_amplitude
+	pos.x = 0
+	#pos.x = sin(time * 0.5) * bob_amplitude * 0.5  # Sway side-to-side
+	return pos
 
 func _input(event) -> void:
 	if event is InputEventMouseMotion:
@@ -48,7 +62,13 @@ func _physics_process(delta):
 	else: # deceleration
 		if speed > 1:
 			speed = speed - 2 * accel
-	print("speed: " + str(speed))
+	##print("speed: " + str(speed))
+	
+	if is_moving and is_on_floor():
+		var velocity_h = Vector2(velocity.x, velocity.z).length()
+		head_bob_time += delta * velocity_h * bob_frequency
+		camera.transform.origin = _head_bob(head_bob_time)
+		print (camera.transform.origin)
 	# Movement
 	var input_dir := Input.get_vector("left", "right", "forwards", "backwards")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
